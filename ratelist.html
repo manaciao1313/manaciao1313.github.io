@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RATELIST</title>
+  <link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="bootstrap.css">
+<script src="bootstrap.js"></script>
+<script src="jquery.js"></script>
+</head>
+<body><script type="text/javascript">
+function myFunction() {
+var input, filter, table, tr, td, i;
+input = document.getElementById("myInput");
+filter = input.value.toUpperCase();
+table = document.getElementById("mytable");
+tr = table.getElementsByTagName("tr");
+for (i = 0; i < tr.length; i++) {
+  td = tr[i].getElementsByTagName("td")[1];
+  if (td) {
+    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+}
+}
+</script>
+  <div class="container-fluid">
+    <caption align="center"><h1>Condensed Ratelist than OTHERS</h1></caption>
+    <input align="right" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for speific item">
+    <table class="table table-striped table-hover table-bordered table-condensed" id="mytable">
+      <thead>
+        <tr class="text-success">
+          <th>#</th>
+          <th>ITEM</th>
+          <th>PRICE PER ITEM</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Single Bedsheet</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>2</td>
+            <td>Double Bedsheet</td>
+            <td>11</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Double Duvet Cover</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Single Duvet Cover</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Pillow Cover</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Single Duvet Cover</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Cushion Cover</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Pillow Cover</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Bath Towel</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Hand Towel</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Pool Towel</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Face Towel</td>
+          <td>5</td>
+</tr>
+        <tr>
+          <td>13</td>
+          <td>Bath mat</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Mattress Protector</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Bed Runner</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Curtain Slider</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Heavy Curtain</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Shower Curtain</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td> Single Blanket</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Double Blanket</td>
+          <td>75</td>
+        </tr>
+        </tbody>
+    </table>
+<div> <p class="text-sucess">For any appearel related to guest we did specially at local price regarding market, this is flexibility for you </p>
+  </div>
+</body>
+<html>
